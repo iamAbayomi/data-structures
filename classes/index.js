@@ -35,3 +35,32 @@ console.log(hashtable.get("key2"))
 
 console.log("hashtable")
 console.log(hashtable)
+
+
+
+
+function power(number, power){
+    let num= number 
+    while(power>1){
+        num = number * num
+        --power
+    }
+    return num
+}
+
+console.log("Factorial answer is", power(5,2))
+
+
+function rpower(number, power){
+   let num = number
+    if(power <1){
+        return
+    }else{
+        num = number * num
+        rpower(number, power-1)
+    }
+    return num
+}
+
+
+console.log("Factorial answer is", rpower(10,2))
